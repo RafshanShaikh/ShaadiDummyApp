@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="16dp"
+    android:elevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:visibility="visible"
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:text="Profile"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textStyle="bold|italic"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:padding="4dp"
+            android:layout_marginTop="4dp"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/gender_txt"
+                android:text="Gender:"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/gender_value_txt"
+                android:text="---"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="4dp"
+            android:layout_marginTop="4dp"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/name_txt"
+                android:text="Name:"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold|italic"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/name_value_txt"
+                android:text="---"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:textStyle="italic"
+                android:layout_width="0dp"
+                android:textSize="16sp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="4dp"
+            android:layout_marginTop="4dp"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dob_txt"
+                android:text="DOB:"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/dob_value_txt"
+                android:text="---"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:layout_width="0dp"
+                android:textSize="16sp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="4dp"
+            android:layout_marginTop="4dp"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/phone_txt"
+                android:text="Phone No:"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/phone_value_txt"
+                android:text="---"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="4dp"
+            android:layout_marginTop="4dp"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/email_txt"
+                android:text="Email:"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/email_value_txt"
+                android:text="---"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:padding="4dp"
+            android:layout_marginTop="4dp"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/location_txt"
+                android:text="Location:"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/location_value_txt"
+                android:text="---"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_layout_ll"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <Button
+                android:backgroundTint="@color/cersie"
+                android:padding="4dp"
+                android:textSize="12sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:id="@+id/accepted_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Accept" />
+
+            <Button
+                android:backgroundTint="@color/cersie2"
+                android:layout_margin="5dp"
+                android:padding="4dp"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:id="@+id/declined_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Decline" />
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:background="@color/cersie"
+            android:padding="8dp"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:id="@+id/accepted_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Member Accepted"/>
+
+        <TextView
+            android:visibility="gone"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:background="@color/cersie2"
+            android:padding="8dp"
+            android:id="@+id/declined_txt"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Member Declined"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>
